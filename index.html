@@ -227,6 +227,31 @@
 			a:hover {
 			  text-decoration: underline;
 			}
+			.table-container {
+			  width: 600px;
+			  height: 300px;
+			  overflow: auto; /* 添加滚动条 */
+			  border: 1px solid #ccc;
+			}
+
+			table {
+			  width: 100%;
+			  border-collapse: collapse;
+			  min-width: 800px; /* 模拟横向超出，触发水平滚动 */
+			}
+
+			th, td {
+			  padding: 8px;
+			  text-align: center;
+			  border: 1px solid #ddd;
+			}
+
+			thead th {
+			  position: sticky;     /* 表头固定 */
+			  top: 0;
+			  background: #f9f9f9;
+			  z-index: 1;
+			}
         }
     </style>
     <!-- 引入Inter字体 -->
@@ -928,5 +953,6 @@
 </body>
 
 </html>
+
 
 
